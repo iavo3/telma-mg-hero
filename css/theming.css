@@ -1,0 +1,143 @@
+/* backgrounds */
+.custom-bg-primary {
+    background-color: #ffd100 !important;
+}
+
+
+.custom-bg-secondary {
+    background-color: #3E3E3E !important;
+}
+
+.custom-bg-dark {
+    background-color: #000 !important;
+}
+
+.switchable-header {
+    background-color: #DBDBDB !important;
+}
+
+.switchable-header .header-inner a {
+    color: #000 !important;
+}
+
+.switchable-header .header-inner li {
+    border-right: 1px solid #000 !important;
+}
+
+.custom-bg-dark-variant {
+    background-color: #292932 !important;
+}
+
+
+.custom-bg-light {
+    background-color: #fff !important;
+}
+
+
+.custom-bg-light {
+    background-image: none !important;
+}
+
+
+
+.stepper-content {
+    position: relative;
+    z-index: 30;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), linear-gradient(130deg, rgb(91, 104, 223) 45%, rgb(115, 224, 169));
+    /* font-size: 16px; */
+}
+
+
+/* end backgrounds */
+.custom-dark-input {
+    background: none !important;
+    color: #fff;
+}
+
+.custom-dark-input input:-webkit-autofill,
+.custom-dark-input input:-webkit-autofill:hover,
+.custom-dark-input input:-webkit-autofill:focus {
+    background: none !important;
+    transition: background-color 5000s ease-in-out 0s;
+
+}
+
+.custom-dark-input:focus {
+    color: #fff;
+
+}
+
+
+.custom-border-primary {
+    border: 1px solid #ffd100 !important;
+}
+
+.custom-border-bottom-primary {
+    border-bottom: 1px solid #ffd100 !important;
+}
+
+.custom-rounded-border {
+    border-radius: 10px;
+}
+
+.custom-dashed-border {
+    border-style: dashed !important;
+}
+
+/* buttons */
+
+.custom-dark-btn {
+    background: #1D1B1B !important;
+    color: #fff !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    padding: 8px 24px !important;
+    margin: 16px 0 !important;
+}
+
+.custom-dark-btn a {
+    color: #fff;
+
+}
+
+/* end buttons */
+
+/* text */
+.custom-bg-light .header-inner a,
+.custom-bg-light h1,
+.custom-bg-light h2,
+.custom-bg-light h3,
+.custom-bg-light p,
+.custom-bg-light .paiment-mode,
+.custom-bg-light .paiment-mode i {
+    color: #3E3E3E !important;
+}
+
+.custom-text-primary {
+    color: #ffd100 !important;
+}
+
+.custom-text-dark {
+    color: #000 !important;
+}
+
+
+.custom-text-light {
+    color: #fff !important;
+}
+
+
+
+
+/* endtext */
+
+/* border */
+.custom-bg-light .header-inner li {
+    border-color: #3E3E3E !important;
+
+}
+
+
+
+
+/* border */

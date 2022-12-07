@@ -1,0 +1,15 @@
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+    .ntw-page-wrapper .map img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .ntw-heading {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,21 @@
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {	
+    .shortcutmenu{
+        display: none;
+    }
+}
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+    .shortcutmenu{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,108 @@
+.hero-item-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 0;
+    object-fit: contain;
+}
+
+.hero-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-left-img-container img {
+    display: block;
+    width: 160px !important;
+    height: 160px !important;
+    object-fit: contain;
+    margin: auto;
+}
+
+.hero-left-caption-nxl {
+    color: #5abeb2;
+    font-size: 125px;
+    font-weight: 800;
+    padding-top: 84px;
+}
+
+.hero-left-caption-3xl {
+    font-size: 38px !important;
+    font-weight: 700 !important;
+    padding-left: 33px !important;
+    margin: 0 !important;
+}
+
+.hero-left-caption-2xl {
+    margin: auto !important;
+    font-weight: 700;
+    font-size: 20px !important;
+    text-align: center !important;
+    line-height: 24px !important;
+
+}
+
+.hero-left-caption-regular {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    line-height: 24px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+}
+
+.hero-left-caption-text {
+    width: 80%;
+    color: #fff;
+    font-size: 16px;
+    text-align: start;
+    margin: 0;
+    line-height: 20px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+}
+
+
+.hero-more {
+    color: #fff !important;
+    font-size: 15px !important;
+    background-color: #3e3e3e !important;
+    font-weight: 700 !important;
+    display: inline-block !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 1px 14px !important;
+}
+
+.hero-right-content {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: row !important;
+
+}
+
+.hero-right-img-label {
+    position: relative;
+    left: 60px;
+    width: 120px;
+    margin-top: 200px;
+    z-index: 60;
+}
+
+.hero-right-img {
+    position: relative !important;
+    top: -40px !important;
+    left: 60px !important;
+    width: 60% !important;
+	
+    object-fit: contain;
+
+}
+
+.hero-left-caption-kadoa {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+}

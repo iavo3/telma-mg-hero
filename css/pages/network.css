@@ -1,0 +1,35 @@
+.ntw-page-wrapper{
+    padding: 160px 0 40px 0;
+}
+
+.ntw-heading{
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+}
+
+.sectn-divider{
+    width: 160px;
+    height: 5px;
+    background: #FFD100;
+    margin-bottom: 80px;
+
+}
+
+.ntw-page-wrapper .map{
+
+    margin: auto;
+}
+
+.ntw-page-wrapper .map img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-inner ul li a{
+    color: #5d5d5d;
+}
+
+.header-inner ul li {
+    border-right: 1px solid #5d5d5d;
+}

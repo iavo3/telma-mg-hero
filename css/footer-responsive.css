@@ -1,0 +1,33 @@
+
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+.dnfooter-right_a2{
+    margin: auto;
+}
+.footer-navs{
+    /* width: 60%; */
+    margin: auto;
+}
+
+.rsp-lg-footer-logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.rsp-lg-footer-logo img{
+    margin: 40px 0 !important;
+}
+.lg-bottom-menu{
+    display: none;
+}
+.resp-bottom-menu{
+    display: block !important;
+    margin: auto;
+}
+}    
