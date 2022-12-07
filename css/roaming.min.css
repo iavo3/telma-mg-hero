@@ -112,7 +112,8 @@
 }
 .sec-tarifs .bx-table {
   position: relative;
-  min-height: 100px;
+  min-height: 20px;
+  margin-bottom: 90px;
 }
 .sec-tarifs .bx-table .table {
   border: 1px solid #3D3A53;
@@ -187,6 +188,34 @@
     height: 72px;
     opacity: 0;
   }
+}
+.bx-info {
+  padding: 0 110px;
+}
+.bx-info--item {
+  border: 1px solid #3D3A53;
+  padding: 48px 29px 28px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.bx-info--item > span {
+  position: absolute;
+  display: inline-block;
+  top: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bx-info h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.bx-info p {
+  color: #8A8A9D;
+  font-size: 12px;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=roaming.min.css.map */

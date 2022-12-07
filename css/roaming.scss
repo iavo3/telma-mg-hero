@@ -6,6 +6,7 @@ $light_third : #83838F;
 $dark : #08070C;
 $dark_primary : #1A1921;
 $dark_secondary : #3D3A53;
+$dark_third : #8A8A9D;
 $yellow: #FFD100;
 
 /* fonts */
@@ -127,7 +128,8 @@ $montserat : 'Montserrat', sans-serif;
 
         .bx-table{
             position: relative;
-            min-height: 100px;
+            min-height: 20px;
+            margin-bottom: 90px;
             .table{
                 border: 1px solid $dark_secondary;
                 transition: all .3s ease-in-out;
@@ -209,3 +211,32 @@ $montserat : 'Montserrat', sans-serif;
     }
   }
   
+
+  .bx-info{
+    padding: 0 110px;
+    &--item{
+        border: 1px solid $dark_secondary;
+        padding: 48px 29px 28px;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &>span{
+            position: absolute;
+            display: inline-block;
+            top: -48px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    h4{
+        color: $light;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    p{
+        color: $dark_third;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+  }
