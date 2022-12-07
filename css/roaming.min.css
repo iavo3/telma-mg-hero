@@ -125,11 +125,11 @@
   font-size: 12px;
   padding: 15px;
 }
-.sec-tarifs .bx-table .table thead th {
+.sec-tarifs .bx-table .table th {
   border-bottom: 2px solid #3D3A53;
   background: #1A1921;
 }
-.sec-tarifs .bx-table .table tbody td {
+.sec-tarifs .bx-table .table td {
   border-bottom: 1px solid #3D3A53;
 }
 
