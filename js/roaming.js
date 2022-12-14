@@ -1,6 +1,8 @@
 $(function() {
     var tb = $('#tarif-outbound'),
-        ld = $('.loading');
+        ld = $('.loading'),
+        select = $('#country-filter'),
+        map = {};
 
     var list = [
         {
@@ -1208,13 +1210,24 @@ $(function() {
     $('#country-filter option').each(function(index, _this){
         let _val = $(_this).text();
         $(_this).attr('value', _val);
+
+        if (map[this.value]) {
+            $(this).remove();
+        }
+        map[this.value] = true;
     });
+
+    select.append(select.find("option").remove().sort(function(a, b) {
+      var at = $(a).text(),
+        bt = $(b).text();
+      return (at > bt) ? 1 : ((at < bt) ? -1 : 0);
+    }));
 
     constructTable('#tarif-outbound');   
 
     tb.hide(); ld.hide();
 
-    $('#country-filter').change( function(){
+    select.change( function(){
         var selection = $(this).val(),
             dataset = tb.find('tr');
 
