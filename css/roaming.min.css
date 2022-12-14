@@ -1,31 +1,84 @@
 /* Color */
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body.mode-light .sec-tarifs {
+  background: #fff;
+}
+body.mode-light .bx-info--item {
+  border-color: #DCDBDF;
+}
+body.mode-light .bx-info h4, body.mode-light .sec-tarifs .bx-title h3, body.mode-light .acc-faq-primary .card-header button,
+body.mode-light .acc-faq-primary .card-body, body.mode-light .bx-contact span, body.mode-light .sec-tarifs .bx-title select {
+  color: #292932;
+}
+body.mode-light .sec-tarifs .bx-title {
+  background: #EFEFF4;
+}
+body.mode-light .bx-info--item > span {
+  border-color: #fff;
+}
+body.mode-light .sec-faq::after {
+  background: url(../img/vector-elp-light.png) no-repeat center top/100% 70px;
+}
+body.mode-light .sec-faq {
+  background: #EFEFF4;
+}
+body.mode-light .sec-faq h2 {
+  color: #12131A;
+}
+body.mode-light .acc-faq-primary .card {
+  border-color: #292932 !important;
+}
+body.mode-light .sec-tarifs .bx-title select {
+  background: url(../img/arrow-down-light.svg) no-repeat center right 13px/11px;
+}
+body.mode-light .sec-tarifs .bx-title select option {
+  background: #fff;
+}
+body.mode-light .sec-tarifs .bx-title select option:hover, body.mode-light .sec-tarifs .bx-title select option:focus, body.mode-light .sec-tarifs .bx-title select option:active, body.mode-light .sec-tarifs .bx-title select option:checked {
+  color: #08070C;
+  font-weight: 700;
+}
+body.mode-light .sec-tarifs .bx-title h3 span {
+  color: #83838F;
+}
+body.mode-light .sec-tarifs .bx-table .table {
+  border: 1px solid #393946;
+}
+body.mode-light .sec-tarifs .bx-table .table th {
+  background: #393946;
+  color: #fff;
+}
+body.mode-light .sec-tarifs .bx-table .table td {
+  color: #393946;
+  border-bottom-color: #DCDBDF;
+}
+
 .main-wrp {
   background: #08070C;
-  height: 100%;
   font-family: "Montserrat", sans-serif;
 }
 
 .hero-img {
-  height: 409px;
+  height: 71.4285714286vh;
   width: 100%;
-  background-size: cover !important;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   position: relative;
   margin-bottom: 57px;
+  background-position: center top !important;
+  background-size: cover !important;
 }
 .hero-img::after {
   content: "";
-  height: 238px;
+  height: 100%;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
-  background: linear-gradient(0deg, rgb(8, 7, 12) 26%, rgba(8, 7, 12, 0) 100%);
+  background: linear-gradient(0deg, rgb(8, 7, 12) 1%, rgba(8, 7, 12, 0) 100%);
 }
 .hero-img > div {
   text-align: center;
@@ -60,7 +113,7 @@
   padding-left: 13px;
 }
 .sec-tarifs {
-  padding: 73px;
+  padding: 73px 0;
   background: #08070C;
 }
 .sec-tarifs .bx-title {
@@ -102,12 +155,16 @@
   padding: 10px 15px;
   appearance: none;
   position: relative;
-  background: url(/img/arrow-down.svg) no-repeat center right 19px/20px 20px;
+  background: url(../img/arrow-down.svg) no-repeat center right 13px/11px;
 }
-.sec-tarifs .bx-title select option:hover,
-.sec-tarifs .bx-title select option:focus,
-.sec-tarifs .bx-title select option:active,
-.sec-tarifs .bx-title select option:checked {
+.sec-tarifs .bx-title select::after {
+  content: "test";
+  color: #000;
+}
+.sec-tarifs .bx-title select option {
+  background: #08070C;
+}
+.sec-tarifs .bx-title select option:hover, .sec-tarifs .bx-title select option:focus, .sec-tarifs .bx-title select option:active, .sec-tarifs .bx-title select option:checked {
   color: #fff;
 }
 .sec-tarifs .bx-table {
@@ -206,6 +263,7 @@
   top: -48px;
   left: 50%;
   transform: translateX(-50%);
+  border: 13px solid #08070C;
 }
 .bx-info h4 {
   color: #fff;
@@ -216,6 +274,203 @@
   color: #8A8A9D;
   font-size: 12px;
   margin-bottom: 0;
+}
+
+.sec-faq {
+  background: #1A1921;
+  padding: 168px 0 111px;
+  position: relative;
+}
+.sec-faq h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 63px;
+  text-align: center;
+}
+.sec-faq::after {
+  content: "";
+  background: url(../img/vector-elp.png) no-repeat center top/100% 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+.sec-faq > * {
+  position: relative;
+  z-index: 2;
+}
+
+.acc-faq-primary .card {
+  background: transparent;
+  margin-bottom: 13px;
+  border: 1px solid #00F861 !important;
+  border-radius: 50px !important;
+}
+.acc-faq-primary .card-header {
+  margin-bottom: 0;
+  background: transparent;
+  border-bottom: none;
+}
+.acc-faq-primary .card-header button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.acc-faq-primary .card-header button:hover, .acc-faq-primary .card-header button:focus {
+  text-decoration: none;
+}
+.acc-faq-primary .card-header button span, .acc-faq-primary .card-header button img {
+  transition: all 0.3s ease-in-out;
+}
+.acc-faq-primary .card-header button:not(.collapsed) {
+  color: #FFD100;
+}
+.acc-faq-primary .card-header button:not(.collapsed) span {
+  transform: rotate(180deg);
+}
+.acc-faq-primary .card-body {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 30px 20px;
+}
+.acc-faq-primary .card-body h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.acc-faq-primary .card-body ul {
+  padding-left: 23px;
+  margin-bottom: 20px;
+}
+.acc-faq-primary .card-body ul li {
+  list-style: square;
+  margin-bottom: 10px;
+}
+
+.bx-contact {
+  text-align: center;
+  margin-top: 50px;
+}
+.bx-contact span {
+  color: #B8B8B8;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.bx-contact a {
+  font-weight: 600;
+  margin-left: 10px;
+  background: #fff;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #08070C;
+}
+
+/* responsive */
+@media screen and (max-width: 1199.98px) {
+  .bx-info {
+    padding: 0;
+  }
+  .sec-tarifs .bx-title .input-group-text {
+    font-size: 12px;
+  }
+  .sec-tarifs .bx-title select {
+    min-width: 160px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .sec-tarifs .bx-table {
+    overflow-x: scroll;
+    overflow-y: visible;
+    min-height: 35px;
+    margin-bottom: 65px;
+  }
+  .sec-tarifs .bx-title select {
+    min-width: auto;
+  }
+  .bx-info--item {
+    padding: 41px 20px 20px;
+  }
+  .bx-info h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .hero-img {
+    height: 50vh;
+  }
+  .hero-img h2 {
+    font-size: 35px;
+  }
+  .hero-img P {
+    font-size: 14px;
+  }
+  .sec-intro p {
+    max-width: 100%;
+  }
+  .sec-tarifs .bx-title {
+    display: block;
+    text-align: left;
+    padding: 20px 23px;
+  }
+  .sec-tarifs .bx-title h3 {
+    margin-bottom: 9px;
+  }
+  .sec-tarifs .bx-title .input-group {
+    width: 100%;
+    display: block;
+  }
+  .sec-tarifs .bx-title .input-group-text {
+    margin-bottom: 17px;
+    padding: 0;
+  }
+  .sec-tarifs .bx-title select {
+    min-width: 100%;
+    margin: 0;
+  }
+  .bx-info--item {
+    margin-bottom: 60px;
+    height: auto;
+  }
+  .bx-info--item div {
+    margin: 0 auto;
+  }
+  .bx-info .col-md-4:last-child .bx-info--item {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480.98px) {
+  .hero-img h2 {
+    font-size: 23px;
+  }
+  .hero-img P {
+    font-size: 12px;
+  }
+  .hero-img > div {
+    padding: 0 15px 30px;
+  }
+  .sec-intro {
+    padding: 35px 15px;
+  }
+  .sec-intro p {
+    font-size: 12px;
+  }
+  .acc-faq-primary .card-header button, .acc-faq-primary .card-body {
+    font-size: 12px;
+  }
+  .sec-faq {
+    padding: 134px 0 53px;
+  }
+  .sec-faq h2 {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=roaming.min.css.map */

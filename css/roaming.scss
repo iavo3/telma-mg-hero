@@ -8,37 +8,98 @@ $dark_primary : #1A1921;
 $dark_secondary : #3D3A53;
 $dark_third : #8A8A9D;
 $yellow: #FFD100;
+$green : #00F861;
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 $montserat : 'Montserrat', sans-serif;
 
+body{
+    &.mode-light{
+        .sec-tarifs{
+            background: $light;
+        }
+        .bx-info--item{
+            border-color: #DCDBDF;
+        }
+        .bx-info h4, .sec-tarifs .bx-title h3, .acc-faq-primary .card-header button,
+        .acc-faq-primary .card-body, .bx-contact span, .sec-tarifs .bx-title select{
+            color: #292932;
+        }
+        .sec-tarifs .bx-title{
+            background: #EFEFF4;
+        }
+        .bx-info--item > span{
+            border-color: $light;
+        }
+        .sec-faq::after{
+            background: url(../img/vector-elp-light.png) no-repeat center top/100% 70px;
+        }
+        .sec-faq{
+            background: #EFEFF4;
+            h2{
+                color: #12131A;
+            }
+        }
+        .acc-faq-primary .card{
+            border-color: #292932 !important;
+        }
+        .sec-tarifs{
+            .bx-title{
+                select{
+                    background: url(../img/arrow-down-light.svg) no-repeat center right 13px/11px;
+                    option{
+                        background: $light;
+                        &:hover,&:focus,&:active,&:checked{
+                            color: $dark;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                h3 span {
+                    color: #83838F;
+                }
+            }
+            .bx-table .table{
+                border: 1px solid #393946;
+                th{
+                    background: #393946;
+                    color: #fff;
+                }
+                td{
+                    color: #393946;
+                    border-bottom-color: #DCDBDF;
+                }
+            }
+        }
+        
+    }
+}
 
 .main-wrp{
     background: $dark;
-    height: 100%;
     font-family: $montserat;
 }
 
-
 .hero-img{
-    height: 409px;
+    height: calc(100vh / 1.4);
     width: 100%;
-    background-size: cover !important;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     position: relative;
     margin-bottom: 57px;
+    background-position: center top !important;
+    background-size: cover !important;
     &::after{
         content: "";
-        height: 238px;
+        height: 100%;
         position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: 1;
-        background: linear-gradient(0deg, rgba(8,7,12,1) 26%, rgba(8,7,12,0) 100%);
+        background: linear-gradient(0deg, rgba(8,7,12,1) 1%, rgba(8,7,12,0) 100%);
     }
     & > div{
         text-align: center;
@@ -76,7 +137,7 @@ $montserat : 'Montserrat', sans-serif;
     }
 
     &-tarifs{
-        padding: 73px;
+        padding: 73px 0;
         background: $dark;
         .bx-title{
             background: $dark_primary;
@@ -116,12 +177,16 @@ $montserat : 'Montserrat', sans-serif;
                 padding: 10px 15px;
                 appearance: none;
                 position: relative;
-                background: url(/img/arrow-down.svg)no-repeat center right 19px/ 20px 20px;
-                option:hover,
-                option:focus,
-                option:active,
-                option:checked{
-                    color: $light;
+                background: url(../img/arrow-down.svg)no-repeat center right 13px/11px;
+                &::after{
+                    content : "test";
+                    color: #000;
+                }
+                option{
+                    background: $dark;
+                    &:hover,&:focus,&:active,&:checked{
+                        color: $light;
+                    }
                 }
             }
         }
@@ -141,7 +206,7 @@ $montserat : 'Montserrat', sans-serif;
                 }
                 th{
                     border-bottom: 2px solid $dark_secondary;
-                    background: #1A1921;
+                    background: $dark_primary;
                 }
                 td{
                     border-bottom: 1px solid $dark_secondary;
@@ -223,6 +288,7 @@ $montserat : 'Montserrat', sans-serif;
             top: -48px;
             left: 50%;
             transform: translateX(-50%);
+            border: 13px solid $dark;
         }
     }
     h4{
@@ -236,3 +302,223 @@ $montserat : 'Montserrat', sans-serif;
         margin-bottom: 0;
     }
   }
+
+.sec-faq{
+    background: $dark_primary;
+    padding: 168px 0 111px;
+    position: relative;
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        color: $light;
+        margin-bottom: 63px;
+        text-align: center;
+    }
+
+    &::after{
+        content: "";
+        background: url(../img/vector-elp.png) no-repeat center top/100% 70px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        display: block;
+        z-index: 1;
+    }
+    & > *{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.acc-faq-primary{
+    .card{
+        background: transparent;
+        margin-bottom: 13px;
+        border : 1px solid $green !important;
+        border-radius: 50px !important;
+        &-header{
+            margin-bottom: 0;
+            background: transparent;
+            border-bottom: none;
+            button{
+                color: $light;
+                font-size: 14px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:hover, &:focus{
+                    text-decoration: none;
+                }
+                span, img{
+                    transition: all .3s ease-in-out;
+                }
+                &:not(.collapsed){
+                    color: $yellow;
+                    span{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        &-body{
+            color: $light;
+            font-size: 14px;
+            padding: 0 30px 20px;
+            h4{
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            ul{
+                padding-left: 23px;
+                margin-bottom: 20px;
+                li{
+                    list-style: square;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.bx-contact{
+    text-align: center;
+    margin-top: 50px;
+    span{
+        color: $light_secondary;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    a{
+        font-weight: 600;  
+        margin-left: 10px;
+        background: $light;
+        padding: 5px 20px;
+        border-radius: 20px;
+        color: $dark;
+    }
+}
+
+/* responsive */
+
+@media screen and (max-width : 1199.98px) {
+    .bx-info {
+        padding: 0;
+    }
+    .sec-tarifs .bx-title{
+        .input-group-text{
+            font-size: 12px;
+        }
+        select{
+            min-width: 160px;
+        }
+    }
+}
+
+
+@media screen and (max-width : 991.98px) {
+    .sec-tarifs{
+        .bx-table{
+            overflow-x: scroll;
+            overflow-y: visible;
+            min-height: 35px;
+            margin-bottom: 65px;
+        }
+        .bx-title select {
+            min-width: auto;
+        }
+    }
+
+    .bx-info{
+        &--item {
+            padding: 41px 20px 20px;
+        }
+        h4{
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media screen and (max-width : 767.98px) {
+    .hero-img{
+        height: calc(100vh / 2);
+        h2{
+            font-size: 35px;
+        }
+        P{
+            font-size: 14px;
+        }
+    }
+    .sec-intro p{
+        max-width: 100%;
+    }
+    .sec-tarifs{
+        .bx-title {
+            display: block;
+            text-align: left;
+            padding: 20px 23px;
+            h3{
+                margin-bottom: 9px;
+            }
+            .input-group {
+                width: 100%;
+                display: block;
+                &-text{
+                    margin-bottom: 17px;
+                    padding: 0;
+                }
+            }            
+            select{
+                min-width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+    .bx-info{
+        &--item {
+            margin-bottom: 60px;
+            height: auto;
+            div{
+                margin: 0 auto;
+            }
+        }
+        .col-md-4:last-child .bx-info--item{
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width : 480.98px) {
+    .hero-img{
+        h2{
+            font-size: 23px;
+        }
+        P{
+            font-size: 12px;
+        }
+        & > div{
+            padding: 0 15px 30px;
+        }
+    }
+    .sec-intro{
+        padding: 35px 15px;
+        p{
+            font-size: 12px;
+        }
+    }
+    .acc-faq-primary .card-header button, .acc-faq-primary .card-body{
+        font-size: 12px;
+    }
+    .sec-faq{
+        padding: 134px 0 53px;
+        h2{
+            font-size: 25px;
+        }
+    }
+}
