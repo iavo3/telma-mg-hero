@@ -1,0 +1,43 @@
+.topleft-angle {
+    position: absolute;
+    z-index: 5 !important;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+
+.topright-angle {
+    position: absolute;
+    z-index: 5 !important;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-left: none !important;
+    border-bottom: none !important;
+}
+
+.bottomright-angle {
+    position: absolute;
+    z-index: 5 !important;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-left: none !important;
+    border-top: none !important;
+}
+
+.bottomleft-angle {
+    position: absolute;
+    z-index: 5 !important;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-right: none !important;
+    border-top: none !important;
+}

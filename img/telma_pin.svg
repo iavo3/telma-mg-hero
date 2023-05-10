@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="181" height="215" viewBox="0 0 181 215">
+  <g id="telma_pin" transform="translate(-344 -155)">
+    <path id="Polygone_1" data-name="Polygone 1" d="M43,0,86,53H0Z" transform="translate(478 370) rotate(180)" fill="#006935"/>
+    <g id="Groupe_1" data-name="Groupe 1">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="90.5" cy="90.5" r="90.5" transform="translate(344 155)" fill="#006935"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="73" cy="73" r="73" transform="translate(362 173)" fill="#ffd100"/>
+    </g>
+  </g>
+</svg>

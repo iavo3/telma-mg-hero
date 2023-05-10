@@ -1,0 +1,170 @@
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>peitfute telma.mg</title>
+	<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-responsive.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/theming.css" />
+    <link rel="stylesheet" href="css/base-responsive.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/footer-responsive.css" />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/custom-responsive.css" />
+    <link rel="stylesheet" href="css/custom-stepper.css" />
+    <link rel="stylesheet" href="css/main-style.css" />
+    <link rel="stylesheet" href="css/pages/shop.css" />
+    <link rel="stylesheet" href="css/pages/shop-responsive.css" />
+    <link rel="stylesheet" href="css/pages/petitfute.css" />
+    <script src="https://kit.fontawesome.com/746f9be7cd.js" crossorigin="anonymous"></script> 
+  </head>
+  <body>
+    <div class="main-wrp body-bg-default">
+
+      <section class="table-section__04 switchable-theme">
+        <div class="table-section__04-inner">
+            <div class="title">
+                <div class="container bx_title_default">
+                    <h2 class="h2">TELMA, RÉSEAU N°1 !</h2>
+                    <p>Les clients sont N°1 chez Telma ! Pour mieux vous servir, nous déployons des Telma shops dans tout
+                        Madagascar pour être au plus près de vous.
+                        Avec aujourd’hui 68 Telma shops, nous misons sur un service de qualité et de proximité pour vous.
+                    </p>
+                </div>
+
+                <div class="map-section my-5">
+
+                    <div class="container">
+                        <div class="d-flex flex-md-row flex-column-reverse d  justify-content-between align-items-start">
+                            <div class="col-12 col-md-4 col-lg-3">
+    
+                                <button type="button"
+                                    class="geolocate w-100  bg-yellow my-3  my-md-0 py-2 border-0 font-weight-bold text-dark"
+                                    id="geolocate">Me
+                                    géolocaliser</button>
+                            </div>
+    
+    
+                            <div class="col-md-8 col-lg-9 input-group search_city">
+                                <input type="text" class="form-control " placeholder="Rechercher " id="city_search" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text px-3 bg-black border-0" style="border-radius: 0;"
+                                        id="search"><i class="fas fa-search"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="shop-map" class="map-container my-3">
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row hotels_list_wrapper">
+                        <div class="col">
+                            <div class="select-outer">
+
+                                <h3>Sélectionner une ville :</h3>
+                                <div class=" row justify-content-center">
+                                    <div class="col-md-6 input-group mb-3">
+                                        <select class="select  form-control" id="region">
+                                        </select>
+                                    </div>
+                                </div>
+                                <hr />
+                            </div>
+            
+                            <div class="row my-5">
+                                <div class="col-12 mb-5 mb-md-0 col-md-3 ">
+                                    <h5 class='text-left text-uppercase' id="selected-region"></h5>
+                                    <hr class="d-block d-md-none dropdown-divider" />
+                                    <hr class="d-block d-md-none dropdown-divider" />
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <div class="" id="hotels-list">
+                                        
+                                    </div>
+                                    <div id="hotels_pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+      
+      
+          <!-- Geoloc modal -->
+          <div class="modal-wrapper d-none">
+              <div class="modal fade d-flex flex-column justify-content-center" id="geolocModal" tabindex="-1" role="dialog"
+                  aria-labelledby="geolocModalLabel" aria-hidden="true">
+                  <div class="modal-dialog  geoloc-modal-dialog	" role="document">
+                      <div class="modal-content">
+                          <div class="">
+                              <button type="button" class="close geoloc-close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <div
+                                  class="text-center d-flex flex-column align-items-center justify-content-center col-5 col-md-3 mx-auto mt-3 mb-5 p-4 geoloc-modal-icon-container">
+                                  <i class="fas fa-map-marker-alt custom-text-primary geoloc-modal-icon"></i>
+                              </div>
+                              <p class="text-dark text-center col-10 mx-auto mt-4">
+      
+                                  Nous souhaitons connaître votre localisation
+                              </p>
+      
+                          </div>
+                          <div class="modal-footer ">
+                              <div class="col-10 col-md-8 d-flex flex-column mx-auto">
+      
+                                  <!-- <div class=" row justify-content-between"> -->
+                                  <button type="button"
+                                      class="col-md-10 btn btn-default  w-100     mx-auto my-md-0 py-2 border-0 font-weight-bold custom-text-primary"
+                                      id="m_geolocate">Me
+                                      géolocaliser
+                                  </button>
+                                  <button type="button"
+                                      class="btn btn-default col-md-10 mx-auto text-dark for-later rounded-0"
+                                      data-dismiss="modal">Plus
+                                      tard</button>
+                                  <!-- </div> -->
+                              </div>
+      
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+    </div>
+
+    
+    <!-- global -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.csv-0.71.min.js"></script>
+    <script src="js/jszip.min.js"></script>
+    <script src="js/pdfmake.min.js"></script>
+    <script src="js/vfs_fonts.js"></script>
+    <script src="js/buttons.html5.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!-- custom -->
+    <script src="script.js"></script>
+    <script src="js/peitfute.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyA_Ktv3bMo0dlMhlI73yV22sk5Qflct_4k&callback=initMap"></script>
+    <script src="js/hse.js"></script>
+</body>
+</html>

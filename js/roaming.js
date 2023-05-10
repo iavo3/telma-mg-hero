@@ -1248,6 +1248,13 @@ $(function() {
         });
     });
 
+
+    $('#test').click(function(){
+        let sz = $('#country-filter option').length;
+        $('#country-filter').show();
+        $('#country-filter')[0].size=sz;
+    });
+
          
     function constructTable(selector) {
          

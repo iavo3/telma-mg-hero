@@ -1,81 +1,164 @@
 /* Color */
+body.mode-light .sec-tarifs {
+  background: #fff;
+}
+body.mode-light .bx-info--item {
+  border-color: #DCDBDF;
+}
+body.mode-light .bx-info h4, body.mode-light .sec-tarifs .bx-title h3, body.mode-light .acc-faq-primary .card-header button,
+body.mode-light .acc-faq-primary .card-body, body.mode-light .bx-contact span, body.mode-light .sec-tarifs .bx-title select {
+  color: #292932;
+}
+body.mode-light .sec-tarifs .bx-title {
+  background: #EFEFF4;
+}
+body.mode-light .bx-info--item > span {
+  border-color: #fff;
+}
+body.mode-light .sec-faq::after {
+  background: url(../img/vector-elp-light.png) no-repeat center top/100% 70px;
+}
+body.mode-light .sec-faq {
+  background: #EFEFF4;
+}
+body.mode-light .sec-faq h2 {
+  color: #12131A;
+}
+body.mode-light .acc-faq-primary .card {
+  border-color: #292932 !important;
+}
+body.mode-light .sec-tarifs .bx-title select {
+  background: url(../img/arrow-down-light.svg) no-repeat center right 13px/11px;
+}
+body.mode-light .sec-tarifs .bx-title select option {
+  background: #fff;
+}
+body.mode-light .sec-tarifs .bx-title select option:hover, body.mode-light .sec-tarifs .bx-title select option:focus, body.mode-light .sec-tarifs .bx-title select option:active, body.mode-light .sec-tarifs .bx-title select option:checked {
+  color: #08070C;
+  font-weight: 700;
+}
+body.mode-light .sec-tarifs .bx-title h3 span {
+  color: #83838F;
+}
+body.mode-light .sec-tarifs .bx-table .table {
+  border: 1px solid #393946;
+}
+body.mode-light .sec-tarifs .bx-table .table th {
+  background: #393946;
+  color: #fff;
+}
+body.mode-light .sec-tarifs .bx-table .table td {
+  color: #393946;
+  border-bottom-color: #DCDBDF;
+}
+
 .sec-faq {
   background: #1A1921;
   padding: 168px 0 111px;
-  position: relative; }
-  .sec-faq h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 63px;
-    text-align: center; }
-  .sec-faq::after {
-    content: "";
-    background: url(../img/vector-elp.png) no-repeat center top/100% 70px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    display: block;
-    z-index: 1; }
-  .sec-faq > * {
-    position: relative;
-    z-index: 2; }
+  position: relative;
+}
+.sec-faq h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 63px;
+  text-align: center;
+}
+.sec-faq::after {
+  content: "";
+  background: url(../img/vector-elp.png) no-repeat center top/100% 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: block;
+  z-index: 1;
+}
+.sec-faq > * {
+  position: relative;
+  z-index: 2;
+}
 
 .acc-faq-primary .card {
   background: transparent;
   margin-bottom: 13px;
   border: 1px solid #00F861 !important;
-  border-radius: 50px !important; }
-  .acc-faq-primary .card-header {
-    margin-bottom: 0;
-    background: transparent;
-    border-bottom: none; }
-    .acc-faq-primary .card-header button {
-      color: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-      .acc-faq-primary .card-header button:hover, .acc-faq-primary .card-header button:focus {
-        text-decoration: none; }
-      .acc-faq-primary .card-header button span, .acc-faq-primary .card-header button img {
-        transition: all .3s ease-in-out; }
-      .acc-faq-primary .card-header button:not(.collapsed) {
-        color: #FFD100; }
-        .acc-faq-primary .card-header button:not(.collapsed) span {
-          transform: rotate(180deg); }
-  .acc-faq-primary .card-body {
-    color: #fff;
-    font-size: 14px;
-    padding: 0 30px 20px; }
-    .acc-faq-primary .card-body h4 {
-      font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 15px; }
-    .acc-faq-primary .card-body ul {
-      padding-left: 23px;
-      margin-bottom: 20px; }
-      .acc-faq-primary .card-body ul li {
-        list-style: square;
-        margin-bottom: 10px; }
+  border-radius: 50px !important;
+}
+.acc-faq-primary .card-header {
+  margin-bottom: 0;
+  background: transparent;
+  border-bottom: none;
+}
+.acc-faq-primary .card-header button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.acc-faq-primary .card-header button:hover, .acc-faq-primary .card-header button:focus {
+  text-decoration: none;
+}
+.acc-faq-primary .card-header button span, .acc-faq-primary .card-header button img {
+  transition: all 0.3s ease-in-out;
+}
+.acc-faq-primary .card-header button:not(.collapsed) {
+  color: #FFD100;
+}
+.acc-faq-primary .card-header button:not(.collapsed) span {
+  transform: rotate(180deg);
+}
+.acc-faq-primary .card-body {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 30px 20px;
+}
+.acc-faq-primary .card-body h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.acc-faq-primary .card-body ul {
+  padding-left: 23px;
+  margin-bottom: 20px;
+}
+.acc-faq-primary .card-body ul li {
+  list-style: square;
+  margin-bottom: 10px;
+}
 
 .bx-contact {
   text-align: center;
-  margin-top: 50px; }
-  .bx-contact span {
-    color: #B8B8B8;
-    display: block;
-    font-size: 14px;
-    margin-bottom: 15px; }
-  .bx-contact a {
-    font-weight: 600;
-    margin-left: 10px;
-    background: #fff;
-    padding: 5px 20px;
-    border-radius: 20px;
-    color: #08070C; }
+  margin-top: 50px;
+}
+.bx-contact span {
+  color: #B8B8B8;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.bx-contact a {
+  font-weight: 600;
+  margin-left: 10px;
+  background: #fff;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #08070C;
+}
+
+@media screen and (max-width: 480.98px) {
+  .acc-faq-primary .card-header button, .acc-faq-primary .card-body {
+    font-size: 12px;
+  }
+  .sec-faq {
+    padding: 134px 0 53px;
+  }
+  .sec-faq h2 {
+    font-size: 25px;
+  }
+}
 
 /*# sourceMappingURL=main-style.css.map */

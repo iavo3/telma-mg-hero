@@ -1,0 +1,140 @@
+.snowflake {
+    position: absolute;
+    /* background: linear-gradient(white, white); 
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white); */
+    width: 40px;
+    height: 40px;
+    /* transform: rotate(45deg); */
+    transform-origin: center;
+    /* position: relative; */
+    background: #FFD100;
+    margin: 100px auto;
+}
+
+.snowflake::before, .snowflake::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFD100;
+ }
+ .snowflake::before{
+    left: -20px;
+ }
+ .snowflake::after{
+    top: -20px;
+ }
+
+#snow{
+    position: fixed;
+    z-index: 9999999999999;
+    width: 100%;
+    top: 0;
+}
+
+  /* .bubbling-heart div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25vh) scale(0);
+    opacity: 0;
+    animation: bubbleUp 2s infinite;
+  }
+  .bubbling-heart div .fa {
+    transform: translateX(12.5vw) rotate(25deg);
+    animation: oscillate 4s ease-in-out infinite;
+  }
+  .bubbling-heart div:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  .bubbling-heart div:nth-child(2) .fa {
+    animation-delay: 1s;
+  }
+  .bubbling-heart div:nth-child(3) {
+    animation-delay: 1s;
+  }
+  .bubbling-heart div:nth-child(3) .fa {
+    animation-delay: 2s;
+  }
+  .bubbling-heart div:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  .bubbling-heart div:nth-child(4) .fa {
+    animation-delay: 3s;
+  }
+  @keyframes bubbleUp {
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -25vh) scale(2);
+    }
+  }
+  @keyframes oscillate {
+    50% {
+      transform: translateX(-12.5vw) rotate(-25deg);
+    }
+  } */
+
+/* 
+  .bg_heart {
+     position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index : 20; 
+      position: relative;
+      overflow: hidden;
+   }
+  
+  .heart {
+      position: absolute;
+      top: -50%;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -m-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      z-index: 999999;
+      
+   }
+  
+  .heart:before {
+      position: absolute;
+      top: -50%;
+      left: 0;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      border-radius: 100%;
+  }
+  
+  .heart:after {
+      position: absolute;
+      top: 0;
+      right: -50%;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      border-radius: 100%;
+  }
+  
+  @-webkit-keyframes love {
+    0%{top:110%}
+  }
+  @-moz-keyframes love {
+    0%{top:110%}
+  }
+  @-ms-keyframes love {
+    0%{top:110%}
+  }
+  @keyframes love {
+    0%{top:110%}
+  } */

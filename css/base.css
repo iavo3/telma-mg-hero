@@ -4063,3 +4063,46 @@ ul {
 .topheader-right_media1 ul li:last-child a {
     border-bottom: none;
 }
+
+.uc-page{
+    background: #000000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uc-content img{
+    min-width: 100%;
+    min-height: 172px;
+    object-fit: cover;
+}
+
+.bx_title_default{
+    text-align: center;
+}
+
+.bx_title_default h2{
+    color: #FFD100;
+    font-size: 30px;
+    margin: 0 0 22px;
+    font-weight: 700;
+}
+
+.bx_title_default p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    font-weight: 500;
+    color: #fff;
+}
+
+.body-bg-default{
+    background: #282931;
+}
+
+@media screen and (max-width : 767.98px) {
+    .uc-content img{
+        min-height: 70px;
+    }
+}

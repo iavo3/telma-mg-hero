@@ -1,0 +1,30 @@
+.snowflake {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transform-origin: center;
+    background: #FFD100;
+    margin: 100px auto;
+}
+
+.snowflake::before, .snowflake::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFD100;
+ }
+ .snowflake::before{
+    left: -20px;
+ }
+ .snowflake::after{
+    top: -20px;
+ }
+
+#snow{
+    position: fixed;
+    z-index: 9999999999999;
+    width: 100%;
+    top: 0;
+}

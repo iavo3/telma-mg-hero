@@ -1,0 +1,32 @@
+.modal_promo .modal-dialog {
+    max-width: 1024px;
+    margin: 1.75rem auto;
+    min-height: 612px;
+}
+.modal_promo .modal-content {
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.modal_promo .carousel-control-prev, .modal_promo .carousel-control-next {
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    font-size: 35px;
+    border: none;
+}
+.modal_promo button.close {
+    background: #ffd100;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #000;
+    font-size: 30px;
+}

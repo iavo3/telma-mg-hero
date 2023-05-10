@@ -1,0 +1,225 @@
+/*
+====================================
+Large Screen - Others
+====================================
+*/
+@media screen and (min-width: 1400px) {
+    /* .articles-grid-list {
+        columns: 3;
+        column-gap: 24px;
+    } */
+
+    .articles-grid-list .article-item {
+        height: auto;
+
+    }
+
+    .featured .article-item {
+        height: 40vh;
+    }
+
+    .article-item-img {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        width: 100%;
+        height: 40vh;
+
+    }
+
+    .article-item-img img {
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        height: 40vh;
+        border-radius: 10px;
+        object-fit: cover;
+
+    }
+
+    .featured-item-img {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+
+    }
+
+    .featured-item-img img {
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        height: 40vh;
+        content-visibility: auto;
+        object-fit: cover;
+
+    }
+
+    .principal-item-img {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+
+    }
+
+    .principal-item-img img {
+        position: relative;
+        z-index: 5;
+        width: 100%;
+        height: 80vh;
+        content-visibility: auto;
+        object-fit: cover;
+
+    }
+
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .dlmhd-inner h2 {
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+        padding-bottom: 11px;
+    }
+
+    .dlmhd-inner a {
+        color: #FFF;
+        font-size: 8px;
+        background-color: #1d1b1b;
+        font-weight: bold;
+        display: inline-block;
+        padding: 2px 17px;
+    }
+
+    .dlmhd-inner {
+        text-align: center;
+        margin-top: -41px;
+        padding-left: 80px;
+    }
+
+
+
+    .dlmhd-left img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: 0px;
+        height: 60px;
+        margin-left: 0;
+    }
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+
+    .actus-label {
+
+        writing-mode: tb-rl;
+        transform: rotate(-180deg);
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-right: 24px;
+    }
+
+    .article-grid .featured-principal,
+    .article-grid .featured-mid,
+    .principal-item-img,
+    .principal-item-img img,
+    .featured-item-img,
+    .featured-item-img img {
+        height: 56vh;
+    }
+
+    .articles-heading {
+        font-size: 1.8rem;
+    }
+
+    .articles-grid-list {
+        columns: 1;
+        column-gap: 24px;
+    }
+
+
+    .articles-grid-list .article-item {
+        height: 60vh;
+    }
+
+
+
+    .dlmhd-left img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: 0px;
+        height: 60px;
+        margin-left: 0;
+    }
+
+
+    .dlmhd-inner h2 {
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+        padding-bottom: 0px;
+    }
+
+
+    .dlmhd-inner a {
+        color: #FFF;
+        font-size: 8px;
+        background-color: #1d1b1b;
+        font-weight: bold;
+        display: inline-block;
+        padding: 2px 17px;
+    }
+
+    .dlmhd-inner {
+        text-align: center;
+        margin-top: -41px;
+        padding-left: 80px;
+    }
+
+
+    .h-actus-line-decor {
+        margin: 8px 0;
+        width: 100%;
+
+    }
+
+    .featuredSlideItem {
+        position: relative;
+        z-index: 30;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: absolute !important;
+        z-index: 30 !important;
+
+    }
+
+
+
+}

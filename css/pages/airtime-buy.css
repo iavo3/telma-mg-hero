@@ -1,0 +1,179 @@
+.topleft-angle {
+    position: absolute;
+    z-index: 5 !important;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+
+.topright-angle {
+    position: absolute;
+    z-index: 5 !important;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-left: none !important;
+    border-bottom: none !important;
+}
+
+.bottomright-angle {
+    position: absolute;
+    z-index: 5 !important;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-left: none !important;
+    border-top: none !important;
+}
+
+.bottomleft-angle {
+    position: absolute;
+    z-index: 5 !important;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-right: none !important;
+    border-top: none !important;
+}
+
+.recharge-card {
+    position: relative;
+    z-index: 30;
+}
+
+.airtime-step2 {
+    position: relative;
+}
+
+.policy {
+    font-size: 0.8rem;
+}
+
+.airtime-step1-cancel,
+.airtime-step1-next,
+#step2-validate,
+#step2-decline,
+#step1-next {
+    cursor: pointer;
+}
+
+iframe {
+    width: 30vw !important;
+    height: 70vh !important;
+}
+
+label {
+    color: #fff;
+}
+
+
+/* light mode style */
+.custom-bg-light,
+.switch-light-bg-only {
+    background-color: #fff !important;
+}
+
+.custom-bg-light .header-inner a,
+.custom-bg-light h1,
+.custom-bg-light h2,
+.custom-bg-light h3,
+.custom-bg-light p,
+.custom-bg-light .text-white,
+.custom-bg-light .paiment-mode,
+.custom-bg-light .paiment-mode i,
+.custom-bg-light .custom-dark-input {
+    color: #3E3E3E !important;
+}
+
+
+
+.custom-bg-light .nav-pills li a.nav-link.active {
+    color: #000 !important;
+    text-shadow: 0 0 1px #000 !important;
+}
+
+.custom-bg-light .header-inner li {
+    border-color: #3E3E3E !important;
+}
+
+.switchable-offer-grid-color {
+    border-bottom: 60px solid #fff !important;
+}
+
+
+.custom-bg-darkgray p,
+.custom-bg-darkgray h2,
+.custom-bg-darkgray h3,
+.custom-bg-darkgray .offer-caption {
+    color: #3E3E3E !important;
+}
+
+.custom-bg-darkgray .spinner-caption h3 {
+    color: #ffd100 !important;
+}
+
+
+.tfym-part_btn a:hover {
+    background-color: #3d3d3d !important;
+    color: #fff !important;
+
+}
+
+.custom-bg-light .gdosms-area {
+    border-bottom: none !important;
+}
+
+
+/* end light mode style */
+
+
+
+.caption-msg {
+    z-index: 30;
+}
+
+.spinner-caption {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.spinner-caption-msg {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.offer-radio .form-check-label span::after {
+    background: #5ABEB2 !important;
+
+}
+
+.modal-backdrop {
+    opacity: 0.9 !important;
+
+}
+
+
+.airtime-buy-control .mvola-pay-icon {
+    position: relative;
+    top: -5px;
+    width: 40px;
+}
+
+.payment-icon {
+    position: relative !important;
+    top: -5px !important;
+    font-size: 2rem !important;
+    padding: 0 5px !important;
+}
+
+.tfym-part {
+    height: 100% !important;
+}

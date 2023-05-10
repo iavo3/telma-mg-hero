@@ -10,6 +10,68 @@ $dark_third : #8A8A9D;
 $yellow: #FFD100;
 $green : #00F861;
 
+body{
+    &.mode-light{
+        .sec-tarifs{
+            background: $light;
+        }
+        .bx-info--item{
+            border-color: #DCDBDF;
+        }
+        .bx-info h4, .sec-tarifs .bx-title h3, .acc-faq-primary .card-header button,
+        .acc-faq-primary .card-body, .bx-contact span, .sec-tarifs .bx-title select{
+            color: #292932;
+        }
+        .sec-tarifs .bx-title{
+            background: #EFEFF4;
+        }
+        .bx-info--item > span{
+            border-color: $light;
+        }
+        .sec-faq::after{
+            background: url(../img/vector-elp-light.png) no-repeat center top/100% 70px;
+        }
+        .sec-faq{
+            background: #EFEFF4;
+            h2{
+                color: #12131A;
+            }
+        }
+        .acc-faq-primary .card{
+            border-color: #292932 !important;
+        }
+        .sec-tarifs{
+            .bx-title{
+                select{
+                    background: url(../img/arrow-down-light.svg) no-repeat center right 13px/11px;
+                    option{
+                        background: $light;
+                        &:hover,&:focus,&:active,&:checked{
+                            color: $dark;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                h3 span {
+                    color: #83838F;
+                }
+            }
+            .bx-table .table{
+                border: 1px solid #393946;
+                th{
+                    background: #393946;
+                    color: #fff;
+                }
+                td{
+                    color: #393946;
+                    border-bottom-color: #DCDBDF;
+                }
+            }
+        }
+        
+    }
+}
+
 .sec-faq{
     background: $dark_primary;
     padding: 168px 0 111px;
@@ -107,5 +169,17 @@ $green : #00F861;
         padding: 5px 20px;
         border-radius: 20px;
         color: $dark;
+    }
+}
+
+@media screen and (max-width : 480.98px) {
+    .acc-faq-primary .card-header button, .acc-faq-primary .card-body{
+        font-size: 12px;
+    }
+    .sec-faq{
+        padding: 134px 0 53px;
+        h2{
+            font-size: 25px;
+        }
     }
 }

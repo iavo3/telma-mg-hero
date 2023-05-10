@@ -1,0 +1,23 @@
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+
+
+    /* map */
+    #infoWindow {
+        width: 40vw;
+        padding: 0
+    }
+
+    .gm-style .gm-style-iw-c {
+        padding: 0;
+        width: 80vw;
+        text-align: center !important;
+    }
+
+
+
+}

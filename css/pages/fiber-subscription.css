@@ -1,0 +1,153 @@
+.c-stepper {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.c-stepper__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.c-stepper__item::before {
+    --size: 3rem;
+    content: "";
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    margin: 1rem auto 0;
+}
+
+.c-stepper__item:not(:last-child)::after {
+    content: "";
+    height: 2px;
+    background-color: #e0e0e0;
+}
+
+.c-stepper__item:not(:last-child)::after {
+    content: "";
+    height: 2px;
+    background-color: #e0e0e0;
+    order: -1;
+}
+
+.c-stepper__item:not(:last-child)::after {
+    content: "";
+    position: relative;
+    top: 1.5rem;
+    left: 50%;
+    height: 2px;
+    background-color: #e0e0e0;
+    order: -1;
+}
+
+.required-file,
+.stepper-succes-msg {
+    font-size: 13px !important;
+
+}
+
+.step-tips {
+    font-size: 12px !important;
+}
+
+
+#step3 .custom-dark-input,
+.file-upload-section .dropdown-divider {
+    border: 1px solid #393946;
+}
+
+.file-upload label {
+    font-weight: 600;
+}
+
+.stepper-succes-msg {
+    color: #83838F;
+}
+
+.bs-stepper .line {
+    background: #fff !important;
+}
+
+
+
+.active-stepper-circle {
+    border: 1px solid #34A853;
+    background: none;
+}
+
+.active-stepper-label {
+    color: #34A853;
+}
+
+
+.offer-pro input[type="radio" i],
+.offer-particulier input[type="radio" i] {
+    accent-color: #34A853;
+    background-color: transparent;
+}
+
+
+
+.resume-divider {
+    width: 32px;
+    height: 2px !important;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.dropzone {
+    border: 1px solid rgba(217, 217, 217, 0.28);
+    background: rgba(14, 14, 19, 0.46);
+}
+
+
+#subscription #place_search {
+    background: #393946 !important;
+    color: #9C9C9C;
+    text-decoration: u;
+}
+
+.fo-subscr-pricing {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.fo-subscr-caption {
+    font-size: 0.8rem;
+}
+
+.fo-modal-icon {
+    font-size: 5rem;
+    margin: auto;
+}
+
+#particulier,
+#pro {
+    opacity: 0;
+}
+
+
+.bulb {
+    position: absolute;
+    top: -12px;
+    left: -8px;
+}
+
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-name-clip {
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    margin-right: 10px;
+}

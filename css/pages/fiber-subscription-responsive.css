@@ -1,0 +1,86 @@
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+
+
+@media screen and (max-width: 576px) {
+    #subscription {
+        padding-top: 0vh !important;
+    }
+
+    .addsOnRow {
+        grid-template-columns: auto auto;
+
+    }
+
+    .user-btn input[name='userType'] {
+        display: none;
+    }
+
+
+
+    .user-btn label {
+        font-size: 12px;
+    }
+
+    .sticky_zone {
+        position: relative !important;
+        top: 0px;
+    }
+
+    #desktop_addons {
+        display: none;
+    }
+
+    .addson-cat-wrapper:nth-child(2n+2) {
+        border: none;
+    }
+
+
+    #mobile_addons {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 15px;
+    }
+
+    .transpose-bill-zone {
+        position: relative;
+        top: 0
+    }
+
+    .addons-cat-name {
+        font-size: 12px;
+    }
+
+    #mobile_addons .addson-cat-wrapper {
+        margin-bottom: 20px;
+    }
+
+    #mobile_addons .adds-on {
+        margin: 16px 0 !important;
+    }
+
+
+    .adds-on input[type="checkbox" i] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+        appearance: none;
+        -webkit-appearance: none !important;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .adds-on input[type="checkbox" i]:checked {
+        background: #34A853;
+    }
+
+    .sticky_zone {
+        width: 100%;
+    }
+
+}

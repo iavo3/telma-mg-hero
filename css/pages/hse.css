@@ -1,0 +1,407 @@
+/* Color */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.img-grid-item ul, .sec-hse .bx-eng--list-wrapper ul li, .sec-hse .bx-resp ul li, .hero-text {
+  display: flex;
+  align-items: center;
+}
+
+.img-grid-item, .sec-hse .bx-eng--list-wrapper ul li span, .sec-hse .bx-resp > div, .sec-step .step--item-icn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.mode-light .sec-step {
+  background: #EFEFF4;
+}
+body.mode-light .sec-step h2 {
+  color: #12131A;
+}
+body.mode-light .sec-step .step--item > div {
+  background: #fff;
+}
+body.mode-light .sec-step .step--item h3 {
+  color: #292932;
+}
+body.mode-light .sec-step .step--item p {
+  color: #8A8A9D;
+}
+body.mode-light .sec-hse {
+  background: #fff;
+}
+body.mode-light .sec-hse h2 {
+  color: #12131A;
+}
+body.mode-light .sec-hse .bx-resp::after {
+  background: linear-gradient(180deg, #fff 9.47%, rgba(8, 7, 12, 0) 52.03%, #fff 97.33%);
+}
+body.mode-light .sec-hse h3 {
+  color: #292932;
+}
+body.mode-light .sec-hse .bx-eng--list-wrapper ul li p {
+  color: #3A3C48;
+}
+
+.hero-text {
+  background: #1B6652;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-text > div {
+  position: relative;
+  z-index: 2;
+}
+.hero-text h2 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 24px;
+}
+.hero-text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+.hero-text a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  color: #1B6652;
+  padding: 7px 17px;
+  background: #FFD100;
+  transition: all 0.3s ease-in-out;
+}
+.hero-text a:hover {
+  background: #fff;
+}
+.hero-text .txt-intro {
+  position: relative;
+  padding-top: 35px;
+}
+.hero-text .txt-intro > * {
+  position: relative;
+  z-index: 2;
+}
+.hero-text .txt-intro::after {
+  content: "";
+  background: url(/img/elyps-trans.png) no-repeat;
+  position: absolute;
+  top: -93px;
+  right: -146px;
+  z-index: 1;
+  width: 858.69px;
+  height: 560.3px;
+}
+
+.sec-step {
+  background: #08070C;
+  padding: 113px 0;
+}
+.sec-step h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 66px;
+  text-align: center;
+}
+.sec-step .step--item {
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.sec-step .step--item:hover {
+  transform: scale(1.1);
+  z-index: 9;
+}
+.sec-step .step--item:hover > div {
+  box-shadow: 0 0 30px rgba(255, 209, 0, 0.6);
+}
+.sec-step .step--item + .step--item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -13.5px;
+  transform: translateY(-50%);
+  background: url(/img/arrow-right-green.svg) no-repeat center;
+  width: 27px;
+  height: 27px;
+  z-index: 10;
+}
+.sec-step .step--item > div {
+  background: #1A1921;
+  padding: 0 16px 12px;
+  height: 100%;
+}
+.sec-step .step--item-icn {
+  height: 100px;
+}
+.sec-step .step--item span {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  background: #FFD100;
+  padding: 2px;
+}
+.sec-step .step--item h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.sec-step .step--item p {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  color: #C4C9CC;
+  margin-bottom: 0;
+}
+
+.sec-hse {
+  padding: 60px 0;
+  background: #08070C;
+}
+.sec-hse h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 78px;
+}
+.sec-hse h2 span {
+  font-weight: 700;
+}
+.sec-hse h3 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 46px;
+}
+.sec-hse .bx-resp {
+  position: relative;
+  background: url(/img/sohail-nachiti.png) no-repeat center/cover;
+  padding: 170px 0;
+}
+.sec-hse .bx-resp > * {
+  position: relative;
+  z-index: 2;
+}
+.sec-hse .bx-resp::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(180deg, #08070C 9.47%, rgba(8, 7, 12, 0) 52.03%, #08070C 97.33%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.sec-hse .bx-resp > div {
+  background: #043226;
+  border: 2px solid rgba(52, 168, 83, 0.18);
+  box-shadow: 0px 0px 60px rgba(52, 168, 83, 0.3);
+  max-width: 813px;
+  padding: 42px;
+  margin: 0 auto;
+}
+.sec-hse .bx-resp ul {
+  margin: 0 40px;
+}
+.sec-hse .bx-resp ul li {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 13px;
+  color: #fff;
+}
+.sec-hse .bx-resp ul li + li {
+  margin-top: 26px;
+}
+.sec-hse .bx-resp ul li::before {
+  content: url(/img/check-mark.svg);
+  display: inline-block;
+  margin-right: 8px;
+}
+.sec-hse .bx-eng {
+  padding: 42px -15px;
+}
+.sec-hse .bx-eng--list-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.sec-hse .bx-eng--list-wrapper ul {
+  padding: 0 12px;
+}
+.sec-hse .bx-eng--list-wrapper ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  min-height: 40px;
+}
+.sec-hse .bx-eng--list-wrapper ul li + li {
+  margin-top: 30px;
+}
+.sec-hse .bx-eng--list-wrapper ul li span {
+  width: 29px;
+  height: 29px;
+  background: #FFD100;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 13px;
+  color: #08070C;
+}
+.sec-hse .bx-eng--list-wrapper ul li p {
+  margin: 0;
+  padding-left: 19px;
+  width: calc(100% - 29px);
+}
+
+.img-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 60% 40%;
+  grid-auto-rows: 84px;
+  grid-auto-flow: dense;
+  margin-bottom: 60px;
+}
+.img-grid-item {
+  border-radius: 21px;
+  overflow: hidden;
+  position: relative;
+}
+.img-grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+.img-grid-item-a {
+  grid-row: span 2;
+}
+.img-grid-item-b {
+  grid-row: span 3/2;
+}
+.img-grid-item-c {
+  grid-row: span 2;
+}
+.img-grid-item-d {
+  background: #1B6652;
+}
+.img-grid-item ul li {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 13px;
+  padding: 0 27px;
+}
+.img-grid-item ul li + li {
+  border-left: 1.5px dashed #FFD100;
+}
+.img-grid-item ul li:nth-of-type(even) {
+  color: #FFD100;
+}
+
+/* responsive */
+@media screen and (max-width: 991.98px) {
+  .sec-step .step--item {
+    margin-bottom: 50px;
+  }
+  .sec-hse .bx-resp {
+    padding: 170px 40px;
+  }
+  .img-grid-item ul li {
+    font-size: 12px;
+  }
+  .sec-step .step--item::after, .sec-step .step--item + .step--item::after {
+    content: "";
+    position: absolute;
+    background: url(/img/arrow-right-green.svg) no-repeat center;
+    width: 27px;
+    height: 27px;
+    z-index: 10;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 31px) rotate(90deg);
+    bottom: 0;
+  }
+  .sec-step .step--item:last-child::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .hero-text {
+    height: auto;
+    padding: 100px 0 65px;
+  }
+  .hero-text .txt-intro::after {
+    top: -139px;
+    right: -84px;
+  }
+  .img-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px;
+  }
+  .img-grid-item {
+    grid-row: auto o !important;
+  }
+  .img-grid-item ul {
+    display: block;
+    text-align: center;
+  }
+  .img-grid-item ul li {
+    margin-bottom: 21px;
+    border: none !important;
+  }
+  .sec-hse .bx-eng--list-wrapper {
+    display: block;
+  }
+  .sec-hse .bx-resp > div {
+    display: block;
+    padding: 12px 42px 42px;
+  }
+  .sec-hse .bx-resp > div li {
+    margin-top: 25px !important;
+  }
+  .sec-hse h2 {
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .hero-text .txt-intro::after {
+    display: none;
+  }
+  .img-grid {
+    grid-template-columns: 100%;
+    grid-auto-rows: 150px;
+  }
+  .img-grid-item {
+    grid-row: initial !important;
+  }
+  .sec-hse .bx-resp > div {
+    display: block;
+    padding: 12px 15px 42px;
+  }
+  .sec-hse .bx-resp ul {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=hse.css.map */
